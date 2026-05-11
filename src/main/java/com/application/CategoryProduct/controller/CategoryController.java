@@ -44,5 +44,8 @@ public Category updateById(@PathVariable long id,@RequestBody Category category 
 public List<Category> getByName(@RequestParam String name){
     return categoryService.getCategoryByName(name);
 }
-
+@GetMapping("/all")
+public List<Category> getAllCategories(){
+    return categoryService.getAllCategories();
+}
 }

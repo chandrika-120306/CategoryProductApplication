@@ -36,4 +36,6 @@ return categoryRepository.save(existingCategory);
 public List<Category> getCategoryByName(String name){
     return categoryRepository.findByNameContainingIgnoringCase(name);
 }
+public List<Category> getAllCategories(){
+    return categoryRepository.findAll();
 }
